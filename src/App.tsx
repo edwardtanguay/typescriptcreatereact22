@@ -1,4 +1,5 @@
 import './App.css';
+import MoreInfo from './components/MoreInfo';
 
 function App() {
 	let name: string = "Christoph";
@@ -26,14 +27,13 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="App-header">
-				<p>Name: <span className="data">{name}</span></p>
-				<p>Age: <span className="data">{age}</span></p>
-				<p>Is a developer: <span className="data">{isDeveloper ? 'yes' : 'no'}</span></p>
-				<p>Scores: <span className="data">{scores.join(', ')}</span></p>
-				<p>Groups: <span className="data">{groups.join(', ')}</span></p>
-				<p>Company: <span className="data">{companyMessage}</span></p>
-			</header>
+			<p>Name: <span className="data">{name}</span></p>
+			<p>Age: <span className="data">{age}</span></p>
+			<p>Is a developer: <span className="data">{isDeveloper ? 'yes' : 'no'}</span></p>
+			<p>Scores: <span className="data">{scores.join(', ')}</span></p>
+			<p>Groups: <span className="data">{groups.join(', ')}</span></p>
+			<p>Company: <span className="data">{companyMessage}</span></p>
+			<MoreInfo status={"finished"} approved={true} numberOfErrors={3} />
 		</div>
 	);
 }
