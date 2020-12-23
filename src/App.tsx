@@ -4,7 +4,7 @@ import MoreInfo from './components/MoreInfo';
 function App() {
 	let name: string = "Christoph";
 	let age: number = 43;
-	let isDeveloper: boolean = true;
+	let isDeveloper: boolean = false;
 	let scores: number[] = [2, 2, 6, 2, 6, 2];
 	let groups: string[] = ['developers', 'members', 'employees'];
 
